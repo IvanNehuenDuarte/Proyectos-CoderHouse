@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Gabienete",
+        "id": 1,
+        "price": 10000,
+        "img": "https://cdn3.iconfinder.com/data/icons/device-and-technology-9/64/18-Speaker-256.png",
+        "stock": 50
+    },
+    {
+        "title": "Mouse",
+        "id": 2,
+        "price": 2500,
+        "img": "https://cdn3.iconfinder.com/data/icons/device-and-technology-9/64/3-Mouse-512.png",
+        "stock": 50
+    },
+    {
+        "title": "Monitor",
+        "id": 3,
+        "price": 20000,
+        "img": "https://cdn3.iconfinder.com/data/icons/device-and-technology-9/64/4-Display-256.png",
+        "stock": 50
+    }
+]
