@@ -1,0 +1,34 @@
+<%- include('partials/head', {tituloWeb: 'New product'}) %>
+
+<%- include('partials/nav')  %>
+<div class="container">
+    <div class="col-xs-8 col-xs-offser-2">
+        <h2 class="text-center">Crea un nuevo producto</h2>
+
+        <form method="post">
+            <div class="form-group">
+                <label for="nombre">Titulo</label>
+                <input type="text" name="product_name" id="nombre" class="form-control" placeholder="Ingresa nombre del producto">
+            </div>
+
+            <div class="form-group">
+                <label for="precio">Precio del producto</label>
+                <input type="number" name="product_price" id="precio" class="form-control" placeholder="Ingrese el precio">
+            </div>
+
+            <div class="form-group">
+                <label for="img">URL de la imagen del producto</label>
+                <input accept="url/*" type="url" name="product_img" id="img" class="form-control" placeholder="Ingrese url">
+            </div>
+
+            <div class="form-group">
+                <label for="precio">Stock</label>
+                <input type="number" name="product_stock" id="stock" class="form-control" placeholder="Ingrese stock">
+            </div>
+
+            <div class="form-group" style="margin-top: 0.5em;">
+            <input type="submit" value="subir" class="btn btn-primary" style="width: 100px; height: 40px;">
+            </div>
+        </form>
+    </div>
+</div>

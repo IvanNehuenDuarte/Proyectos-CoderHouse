@@ -1,0 +1,56 @@
+<%- include('partials/head', {tituloWeb: 'All products'}) %>
+
+<body>
+
+    <%- include('partials/nav')  %> 
+
+    <div class="container p-4">
+        <div class="row">
+            <% data.forEach((product) =>{ %>
+                <div class="col-md-4">
+                    <div class="card" style="margin-top: 1em;">
+                        <div class="card-header" style="background-color: #364652;">
+                            <%= product.product_name %> 
+                        </div>
+                        <div class="card-body" style="background-color: #C7DBE6; color: black;">
+                            <b>Price:</b>
+                            <%= product.product_price %>
+                            <br>
+                            <b>Stock: <%= product.product_stock %>  </b>
+                            <br>
+                            <b>ID: </b><%= product.product_id %>
+                            <img src="<%= product.product_img %>" style="width: 20%; float: right">
+                        </div>
+                        <div class="card-footer" style="background-color: #364652;">
+                            <a href="/delete/<%= product.product_id %> " class="btn btn-danger">Delete</a>
+                            <a href="/products/edit/<%= product.product_id %>" class="btn btn-primary" id="edit" style="float: right;">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %> 
+        </div>
+    </div>
+
+    <h1 style="text-align: center; margin-top: 1em">Chat:</h1>
+
+  <div id="message" class="container"></div>
+
+  <form
+    onsubmit="addMensajes(this)"
+    class="panel"
+    style="text-align: center; margin-top: 1em"
+  >
+    <input
+      type="text"
+      id="autor"
+      placeholder="Ingresa tu nombre"
+      autofocus
+    />
+    <input type="text" id="mensaje" placeholder="Di algo" />
+    <input type="submit" value="Enviar" />
+  </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="socket.js"></script>
+</body>
+</html>
