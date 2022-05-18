@@ -1,0 +1,16 @@
+[
+    {"titulo": "heladera",
+    "precio": 10000,
+    "thumbnail": "foto heladera",
+    "id": 0}
+    , {
+    "titulo": "estufa",
+    "precio": 3000,
+    "thumbnail": "foto estufa",
+    "id": 1
+    }, {
+    "titulo": "cocina",
+    "precio": 7000,
+    "thumbnail": "foto cocina",
+    "id": 2
+}]
