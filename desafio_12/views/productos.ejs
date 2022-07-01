@@ -1,0 +1,14 @@
+<%- include('partials/head', {tituloWeb: 'Bienvenido'}) %> 
+<body>
+    <div class="container p-4 text-center">
+
+        <h1 class="mt-4 mb-5"> Bienvenido <%= user.userName %> </h1>
+        <a href="/logout" class="btn btn-danger" type="submit">Cerrar sesión</a>
+
+    </div>
+
+    <div class="container p-4 text-center">
+        <h1>Productos</h1>
+    </div>
+</body>
+</html>

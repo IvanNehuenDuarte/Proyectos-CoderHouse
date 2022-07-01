@@ -1,0 +1,23 @@
+<%- include('partials/head', { tituloWeb: 'Register' })  %> 
+
+<body>
+    <div class="container p-4">
+
+        <h1 class="text-center">Registrar usuario</h1>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <form action="/register" method="post">
+                    <input 
+                    type="text" 
+                    name="userName" 
+                    class="form-control mb-2" 
+                    placeholder="Ingrese nombre de usuario"
+                    >
+                    <button class="btn btn-primary" type="submit">Registrar usuario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
